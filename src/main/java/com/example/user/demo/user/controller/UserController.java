@@ -22,7 +22,7 @@ public class UserController {
         User save = userRepository.save(user);
         return new ResponseEntity<>(save, HttpStatus.OK);
     }
-System.out.println("conflict from the github");
+        System.out.println("conflict from local");
     @DeleteMapping
     public ResponseEntity<String> deleteUser(@PathVariable long id){
         userRepository.deleteById(id);
